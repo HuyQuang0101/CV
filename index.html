@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #1d2671, #c33764);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #c33764;
+            margin-bottom: 20px;
+        }
+        .profile h1 {
+            font-size: 2.2em;
+            color: #c33764;
+            margin: 10px 0;
+        }
+        .profile p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #1d2671;
+            border-bottom: 3px solid #c33764;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+        .section ul li:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        .contact {
+            font-size: 1em;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>HI</h1>
+    <div class="header">
+        <h1>Tran Nguyen Quang Huy</h1>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="https://via.placeholder.com/180" alt="Profile Picture">
+            <h1>SoC Physical Design Intern</h1>
+            <p>Binh Thanh District, Ho Chi Minh City, Vietnam</p>
+            <div class="contact">
+                <p>Email: tnqhuya1@gmail.com | Phone: (+84) 838 294 612</p>
+                <p><a href="https://www.linkedin.com/in/huyquang1101/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Objective</h2>
+            <p>As a motivated 4th-year Physics and Computer Science student, I am passionate about transitioning my academic knowledge into practical applications in SoC Physical Design. I aspire to work on innovative projects, mastering skills in floorplanning, placement, and routing, while contributing to the growth of the semiconductor industry.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>University of Science, VNU-HCMC</strong> (2021 - Present)
+                    <br>Major: Physics and Computer Science | GPA: 3.37/4</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> C/C++ | Java | Python | Verilog</li>
+                <li><strong>Tools:</strong> KiCad 8 | Quartus II | PyCharm | Eclipse</li>
+                <li><strong>Protocols:</strong> APB | UART</li>
+                <li><strong>Soft Skills:</strong> Self-learning | Communication | Teamwork |Adaptability | Research skill</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Hardware Design Intern at REVOBRICKS LLC</strong> (Jul 2024 - Sep 2024)
+                    <ul>
+                        <li>Redesigned and developed electronic circuits using KiCad.</li>
+                        <li>Ensured design feasibility and compatibility with project requirements.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>VSTEP Level 4 (2024)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>Specialized Scholarships in Physics and Computer Science (2023)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Simple Counter using IC74247</strong> (Dec 2023 - Jan 2024)
+                    <ul>
+                        <li>Designed and simulated a simple counting device using Proteus 8.</li>
+                    </ul>
+                </li>
+                <li><strong>Inductive Proximity Sensor using IC LDC1101</strong> (Aug 2024 - Sep 2024)
+                    <ul>
+                        <li>Designed schematic and PCB layout using KiCad 8.</li>
+                        <li>Calculated parameters for sensor design.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Tran Nguyen Quang Huy. All Rights Reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
