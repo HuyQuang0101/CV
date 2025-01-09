@@ -3,59 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Web</title>
+    <title>Tran Nguyen Quang Huy - CV</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+        /* Body and background */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ece9e6, #ffffff);
+            background: linear-gradient(120deg, #1d2671, #c33764, #ece9e6);
+            background-size: 300% 300%;
+            animation: gradientMove 10s ease infinite;
             color: #333;
         }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
         .header {
             background: linear-gradient(90deg, #1d2671, #c33764);
             color: white;
             padding: 40px 20px;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease;
         }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .header h1 {
             font-size: 3em;
             margin: 0;
         }
+
+        /* Container */
         .container {
             max-width: 1000px;
             margin: 30px auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease;
         }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .profile {
             text-align: center;
             margin-bottom: 30px;
         }
+
         .profile img {
             width: 180px;
             height: 180px;
             border-radius: 50%;
             border: 5px solid #c33764;
             margin-bottom: 20px;
+            transition: transform 0.3s ease;
         }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
         .profile h1 {
             font-size: 2.2em;
             color: #c33764;
             margin: 10px 0;
         }
+
         .profile p {
             font-size: 1.1em;
             color: #555;
         }
+
         .section {
             margin-top: 30px;
         }
+
         .section h2 {
             font-size: 1.8em;
             color: #1d2671;
@@ -63,31 +100,47 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+
         .section ul {
             list-style: none;
             padding: 0;
         }
+
         .section ul li {
             margin-bottom: 15px;
             padding: 15px;
             background: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 8px;
-            transition: box-shadow 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .section ul li:hover {
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
+
+        a {
+            color: #c33764;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1d2671;
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
             color: #777;
             font-size: 0.9em;
+            animation: fadeIn 2s ease;
         }
-        .contact {
-            font-size: 1em;
-            color: #333;
-            margin-top: 10px;
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -98,7 +151,7 @@
 
     <div class="container">
         <div class="profile">
-            <img src="https://via.placeholder.com/180" alt="Profile Picture">
+            <img src="https://yt3.googleusercontent.com/7p7aJIHPPZOPYc1btVpRKhe1veKA5uvPhst_BWeDIWnaByI_uLpnVkyF8YLV3EPMqiGv3A1pzg=s900-c-k-c0x00ffffff-no-rj" alt="Profile Picture">
             <h1>SoC Physical Design Intern</h1>
             <p>Binh Thanh District, Ho Chi Minh City, Vietnam</p>
             <div class="contact">
@@ -126,7 +179,7 @@
                 <li><strong>Programming:</strong> C/C++ | Java | Python | Verilog</li>
                 <li><strong>Tools:</strong> KiCad 8 | Quartus II | PyCharm | Eclipse</li>
                 <li><strong>Protocols:</strong> APB | UART</li>
-                <li><strong>Soft Skills:</strong> Self-learning | Communication | Teamwork |Adaptability | Research skill</li>
+                <li><strong>Soft Skills:</strong> Self-learning | Communication | Teamwork | Adaptability | Research skill</li>
             </ul>
         </div>
 
